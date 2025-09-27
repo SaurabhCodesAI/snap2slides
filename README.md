@@ -1,16 +1,41 @@
-# Snap2Slides Pro
+# 🎯 Snap2Slides Pro
 
-**Snap2Slides Pro** is a cutting-edge AI-powered presentation generator that transforms images, PDFs, and documents into professional presentation slides. Built with Next.js 14 and powered by Google's Gemini Vision API, it offers a seamless, mobile-responsive experience for creating presentations from any visual content.
+> **Transform any document into professional presentations with AI** 
 
-![Snap2Slides Pro](https://img.shields.io/badge/Next.js-14.2.33-black) ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue) ![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-38B2AC) ![AI Powered](https://img.shields.io/badge/AI-Powered-orange)
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Available-success)](https://snap2slides.vercel.app)
+[![Next.js](https://img.shields.io/badge/Next.js-14.2.33-black)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)](https://www.typescriptlang.org/)
+[![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-black)](https://vercel.com)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
-## Features
+**Snap2Slides** is a production-ready, AI-powered presentation generator built from scratch over 3 weeks. It transforms images, PDFs, and documents into professional PowerPoint slides using Google's Gemini Vision API, featuring enterprise-grade reliability with multi-API failover and comprehensive mobile support.
 
-- **AI Image Analysis**: Advanced computer vision using Google Gemini AI
-- **Smart Content Generation**: Automatically creates structured presentation content
-- **Instant PowerPoint Export**: Download professional .pptx files ready for use
-- **Clean, Professional Interface**: Apple-level design without unnecessary animations
-- **Real-time Progress Tracking**: Visual feedback during processing
+## 🎬 **[Watch Live Demo Video](https://youtu.be/your-video-id)**
+
+[![Demo Video Thumbnail](https://img.shields.io/badge/▶️_Demo_Video-Watch_Now-red?style=for-the-badge)](https://youtu.be/your-video-id)
+
+## 🌐 **[Try It Live - No Registration Required](https://snap2slides.vercel.app)**
+
+> **Real application, real AI processing, real PowerPoint downloads**
+
+## ✨ **What Makes This Special**
+
+This isn't just another AI tool - it's a **complete production application** built with real-world challenges in mind:
+
+### 🚀 **Core Features**
+- 🤖 **Multi-API AI Processing** - Google Gemini Vision with automatic failover
+- 📄 **Universal File Support** - Images, PDFs, Word docs, PowerPoint (up to 50MB)
+- 📱 **True Mobile-First** - Tested on real devices, works perfectly on phones
+- ⚡ **Real-time Processing** - Live progress tracking, no fake loading screens
+- 💾 **Instant Downloads** - Professional PowerPoint files ready for presentation
+- 🔧 **Admin Monitoring** - Built-in system health dashboard
+
+### 🛠 **Production-Grade Architecture**
+- **Enterprise Reliability** - Multi-API rotation prevents downtime
+- **Cross-Device Compatibility** - Network-enabled testing across devices  
+- **Performance Optimized** - React.memo, code splitting, hardware acceleration
+- **Comprehensive Error Handling** - Graceful degradation and user feedback
+- **Security First** - Input validation, file type restrictions, API protection
 
 ## Setup
 
