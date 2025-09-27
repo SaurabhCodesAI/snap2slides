@@ -1,4 +1,4 @@
-# 🎯 Snap2Slides Pro
+# Snap2Slides Pro
 
 > **AI-Powered Presentation Generator** - Transform images into professional slides with the power of AI
 
