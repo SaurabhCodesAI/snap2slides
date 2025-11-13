@@ -1,0 +1,57 @@
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# Production builds
+/.next/
+/out/
+/dist/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Vercel
+.vercel
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+temp.*
+debug.log
+
+# Test files
+test-*.js
+quick-test.js
+system-test-suite.js
+health-check.js
+show-network-urls.js
+network-server.js
+final-status.js
+fix-summary.js
+server-status.js
+list-models.js
+test-*.js
+
+# Local development
+.env.example.backup
+temp.pptx

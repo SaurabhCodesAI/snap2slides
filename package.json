@@ -1,0 +1,62 @@
+{
+  "name": "snap2slides-pro",
+  "version": "1.0.0",
+  "description": "AI-powered presentation generator that transforms images into professional slides",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "dev:turbo": "next dev --turbo",
+    "dev:network": "next dev --hostname 0.0.0.0",
+    "build": "next build",
+    "build:analyze": "ANALYZE=true next build",
+    "start": "next start",
+    "start:production": "next start --port 3000",
+    "lint": "next lint --fix",
+    "lint:check": "next lint",
+    "type-check": "tsc --noEmit --incremental",
+    "clean": "rimraf .next out dist",
+    "test:build": "npm run type-check && npm run lint:check && npm run build"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@types/formidable": "^3.4.5",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "clsx": "^2.0.0",
+    "critters": "^0.0.23",
+    "express": "^5.1.0",
+    "form-data": "^4.0.4",
+    "formidable": "^3.5.4",
+    "framer-motion": "^10.16.0",
+    "html2canvas": "^1.4.1",
+    "http-proxy-middleware": "^3.0.5",
+    "jspdf": "^3.0.3",
+    "lucide-react": "^0.290.0",
+    "mongodb": "^6.0.0",
+    "nanoid": "^5.0.0",
+    "next": "^14.2.30",
+    "officegen": "^0.6.5",
+    "postcss": "^8",
+    "pptxgenjs": "^4.0.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.10",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.0"
+  },
+  "keywords": [
+    "ai",
+    "presentations",
+    "nextjs",
+    "typescript",
+    "gemini"
+  ],
+  "author": "Snap2Slides Pro Team",
+  "license": "MIT"
+}
