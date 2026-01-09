@@ -1,0 +1,59 @@
+{
+  "name": "Snap2Slides - AI Presentation Generator",
+  "short_name": "Snap2Slides",
+  "description": "Transform images into professional presentation slides using AI",
+  "start_url": "/",
+  "scope": "/",
+  "id": "snap2slides",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
+  "background_color": "#000000",
+  "theme_color": "#3b82f6",
+  "orientation": "any",
+  "categories": ["productivity", "business", "utilities"],
+  "lang": "en",
+  "dir": "ltr",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png", 
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icon-maskable-512.png",
+      "sizes": "512x512", 
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshot-mobile.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Mobile view of Snap2Slides"
+    },
+    {
+      "src": "/screenshot-desktop.png", 
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Desktop view of Snap2Slides"
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background: #000000;
+    color: #ffffff;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    background: #007AFF;
+    color: white;
+    font-weight: 500;
+    padding: 12px 24px;
+    border-radius: 12px;
+    border: none;
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .btn-primary:hover {
+    background: #0056CC;
+    transform: translateY(-1px);
+  }
+  
+  .btn-primary:active {
+    transform: translateY(0);
+  }
+  
+  .btn-primary:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+  }
+  
+  .btn-secondary {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-weight: 500;
+    padding: 12px 24px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 24px;
+    transition: all 0.2s ease;
+  }
+  
+  .card:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.15);
+  }
+  
+  .upload-zone {
+    border: 2px dashed rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    padding: 48px 24px;
+    text-align: center;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.03);
+    transition: all 0.2s ease;
+  }
+  
+  .upload-zone:hover {
+    border-color: #007AFF;
+    background: rgba(0, 122, 255, 0.05);
+  }
+  
+  .upload-zone.active {
+    border-color: #007AFF;
+    background: rgba(0, 122, 255, 0.1);
+  }
+  
+  .feature-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 24px;
+    transition: all 0.2s ease;
+  }
+  
+  .feature-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-2px);
+  }
+  
+  .progress-bar {
+    width: 100%;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  
+  .progress-fill {
+    height: 100%;
+    background: #007AFF;
+    border-radius: 2px;
+    transition: width 0.3s ease;
+  }
+  
+  .status-indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #34C759;
+  }
+  
+  .status-indicator.processing {
+    background: #007AFF;
+  }
+  
+  .status-indicator.error {
+    background: #FF3B30;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}

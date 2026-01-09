@@ -1,0 +1,172 @@
+{
+  "timestamp": "2025-09-26T10:32:06.786Z",
+  "tests": [
+    {
+      "name": "Environment Configuration",
+      "status": "pass",
+      "details": {
+        "missingVars": [],
+        "invalidVars": []
+      }
+    },
+    {
+      "name": "Dependencies Check",
+      "status": "pass",
+      "details": {
+        "missingDeps": [],
+        "totalDeps": 24
+      }
+    },
+    {
+      "name": "File Structure",
+      "status": "pass",
+      "details": {
+        "missingFiles": [],
+        "corruptFiles": []
+      }
+    },
+    {
+      "name": "Gemini API Connectivity",
+      "status": "pass",
+      "details": {
+        "modelCount": 50,
+        "testResponse": "Connection successful. I am able to respond to your queries. How can I help you today?\n"
+      }
+    },
+    {
+      "name": "Server Health",
+      "status": "pass",
+      "details": {
+        "port": 3001,
+        "httpStatus": 200
+      }
+    },
+    {
+      "name": "API Endpoints",
+      "status": "pass",
+      "details": {
+        "passCount": 2,
+        "totalCount": 2,
+        "results": [
+          {
+            "path": "/api/gemini-vision",
+            "method": "GET",
+            "expectedStatus": 405,
+            "actualStatus": 405,
+            "passed": true
+          },
+          {
+            "path": "/api/slides",
+            "method": "GET",
+            "expectedStatus": 400,
+            "actualStatus": 400,
+            "passed": true
+          }
+        ]
+      }
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "fixes": [],
+  "performance": {
+    "uptime": 5009,
+    "memoryUsage": {
+      "rss": 8.96,
+      "heapUsed": 3.52,
+      "heapTotal": 6.15
+    }
+  },
+  "realTimeLogs": [
+    {
+      "timestamp": "2025-09-26T10:32:06.787Z",
+      "source": "MAIN",
+      "level": "info",
+      "message": "🚀 Starting system tests..."
+    },
+    {
+      "timestamp": "2025-09-26T10:32:06.790Z",
+      "source": "PERF",
+      "level": "info",
+      "message": "Starting performance monitoring..."
+    },
+    {
+      "timestamp": "2025-09-26T10:32:06.790Z",
+      "source": "ENV",
+      "level": "info",
+      "message": "Testing environment configuration..."
+    },
+    {
+      "timestamp": "2025-09-26T10:32:06.792Z",
+      "source": "DEPS",
+      "level": "info",
+      "message": "Testing dependencies..."
+    },
+    {
+      "timestamp": "2025-09-26T10:32:06.792Z",
+      "source": "FILES",
+      "level": "info",
+      "message": "Testing file structure..."
+    },
+    {
+      "timestamp": "2025-09-26T10:32:06.794Z",
+      "source": "API",
+      "level": "info",
+      "message": "Testing API connectivity..."
+    },
+    {
+      "timestamp": "2025-09-26T10:32:11.207Z",
+      "source": "API",
+      "level": "info",
+      "message": "Gemini API: 50 models available"
+    },
+    {
+      "timestamp": "2025-09-26T10:32:12.530Z",
+      "source": "API",
+      "level": "info",
+      "message": "Gemini API test successful"
+    },
+    {
+      "timestamp": "2025-09-26T10:32:12.530Z",
+      "source": "SERVER",
+      "level": "info",
+      "message": "Testing server health..."
+    },
+    {
+      "timestamp": "2025-09-26T10:32:13.130Z",
+      "source": "SERVER",
+      "level": "info",
+      "message": "Server running on port 3001"
+    },
+    {
+      "timestamp": "2025-09-26T10:32:13.173Z",
+      "source": "ENDPOINTS",
+      "level": "info",
+      "message": "Testing API endpoints..."
+    },
+    {
+      "timestamp": "2025-09-26T10:32:13.659Z",
+      "source": "ENDPOINTS",
+      "level": "info",
+      "message": "GET /api/gemini-vision: 405 ✅"
+    },
+    {
+      "timestamp": "2025-09-26T10:32:13.760Z",
+      "source": "ENDPOINTS",
+      "level": "info",
+      "message": "GET /api/slides: 400 ✅"
+    },
+    {
+      "timestamp": "2025-09-26T10:32:13.760Z",
+      "source": "MAIN",
+      "level": "info",
+      "message": "✅ All tests completed"
+    },
+    {
+      "timestamp": "2025-09-26T10:32:14.770Z",
+      "source": "CLEANUP",
+      "level": "info",
+      "message": "Cleaning up..."
+    }
+  ]
+}
