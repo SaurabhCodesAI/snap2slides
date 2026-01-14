@@ -1,165 +1,159 @@
-# Snap2Slides Pro
+# Snap2Slides
 
-**Snap2Slides Pro** is a cutting-edge AI-powered presentation generator that transforms images, PDFs, and documents into professional presentation slides. Built with Next.js 14 and powered by Google's Gemini Vision API, it offers a seamless, mobile-responsive experience for creating presentations from any visual content.
+**AI-Powered Image-to-PowerPoint Converter**
 
-![Snap2Slides Pro](https://img.shields.io/badge/Next.js-14.2.33-black) ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue) ![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-38B2AC) ![AI Powered](https://img.shields.io/badge/AI-Powered-orange)
+> 💡 **Seeking Microgrant:** $300 for PDF improvements and better error handling. [See funding details →](./ROADMAP.md)
 
-## Features
+A Next.js web app that converts images and documents into PowerPoint presentations using Google Gemini Vision API. Built as a learning project to understand AI integration, file processing, and Next.js deployment.
 
-- **AI Image Analysis**: Advanced computer vision using Google Gemini AI
-- **Smart Content Generation**: Automatically creates structured presentation content
-- **Instant PowerPoint Export**: Download professional .pptx files ready for use
-- **Clean, Professional Interface**: Apple-level design without unnecessary animations
-- **Real-time Progress Tracking**: Visual feedback during processing
+![Next.js](https://img.shields.io/badge/Next.js-14.2.33-black) ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue) ![Tailwind](https://img.shields.io/badge/Tailwind-CSS-38B2AC) ![AI Powered](https://img.shields.io/badge/AI-Powered-orange)
 
-## Setup
+---
 
-1. **Install Dependencies**
-   ```bash
-   npm install
-   ```
+## What It Does
 
-2. **Configure Gemini API**
-   - Get your API key from [Google AI Studio](https://makersuite.google.com/app/apikey)
-   - Add it to `.env.local`:
-   ```
-   GEMINI_API_KEY=your_actual_api_key_here
-   ```
+1. Upload images (JPG, PNG, WebP) or PDFs
+2. AI analyzes content with Gemini Vision
+3. Generates structured slide content
+4. Downloads as editable PowerPoint (.pptx)
 
-3. **Run Development Server**
-   ```bash
-   npm run dev
-   ```
+---
 
-4. **Open in Browser**
-   - Navigate to `http://localhost:3000` (or the port shown in terminal)
+## Current Features
 
-## Usage
+✅ **Image Analysis** - Google Gemini Vision API integration  
+✅ **PowerPoint Generation** - Creates editable .pptx files (pptxgenjs)  
+✅ **File Upload** - Drag & drop, up to 10MB  
+✅ **Mobile Responsive** - Works on phones and tablets  
+✅ **8 API Endpoints** - analyze, generate, health checks  
+✅ **Production Ready** - Deployed on Vercel  
 
-1. **Upload Image**: Drag and drop or click to select an image file (JPG, PNG, WebP up to 10MB)
-2. **Generate Slides**: Click "Generate Slides" to process with AI
-3. **Download Result**: PowerPoint file will automatically download when ready
+---
 
-## Technical Stack
-
-- **Next.js 14**: React framework with App Router
-- **TypeScript**: Type-safe development
-- **Tailwind CSS**: Utility-first styling
-- **Google Gemini AI**: Advanced image analysis and content generation
-- **PptxGenJS**: PowerPoint file generation
-
-## API Routes
-
-- `POST /api/gemini-vision`: Process images with AI
-- `POST /api/generate-pptx-slides`: Create PowerPoint presentations
-
-## File Structure
-
-```
-app/
-├── api/
-│   ├── gemini-vision/route.ts    # AI image processing
-│   └── generate-pptx-slides/route.ts  # PowerPoint generation
-├── globals.css                   # Clean, professional styling
-├── layout.tsx                    # Root layout
-└── page.tsx                      # Main application interface
-```
-
-## Environment Variables
+## Quick Start
 
 ```bash
-GEMINI_API_KEY=your_gemini_api_key_here
+# Clone and install
+git clone https://github.com/SaurabhCodesAI/snap2slides.git
+cd snap2slides
+npm install
+
+# Set up environment
+cp .env.example .env.local
+# Add your Google Gemini API key
+
+# Run development server
+npm run dev
 ```
 
-## Production Deployment
+Visit http://localhost:3000
 
-1. Build the application:
-   ```bash
-   npm run build
-   ```
+**Get API Key:** [Google AI Studio](https://makersuite.google.com/app/apikey)
 
-2. Start production server:
-   ```bash
-   npm start
-   ```
+---
 
-Make sure to set the `GEMINI_API_KEY` environment variable in your production environment.
-- **TypeScript**: Full type safety and excellent developer experience
-
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Next.js 14** - React framework with App Router
 - **TypeScript** - Type-safe development
 - **Tailwind CSS** - Utility-first styling
 - **Google Gemini AI** - Image analysis and content generation
-- **MongoDB** - Database for storing presentations
-- **Framer Motion** - Smooth animations
-
-## 🎯 Quick Start
-
-1. **Install Dependencies**
-   ```bash
-   npm install
-   ```
-
-2. **Environment Setup**
-   ```bash
-   cp .env.local.example .env.local
-   # Add your API keys
-   ```
-
-3. **Run Development Server**
-   ```bash
-   npm run dev
-   ```
-
-4. **Open Browser**
-   Visit [http://localhost:3000](http://localhost:3000)
-
-## 📁 Project Structure
-
-```
-├── app/
-│   ├── api/          # API routes
-│   ├── components/   # Reusable components
-│   ├── globals.css   # Global styles
-│   ├── layout.tsx    # Root layout
-│   └── page.tsx      # Homepage
-├── public/           # Static assets
-├── next.config.js    # Next.js configuration
-└── tailwind.config.js # Tailwind configuration
-```
-
-## 🔧 Development
-
-- `npm run dev` - Start development server
-- `npm run build` - Build for production  
-- `npm run start` - Start production server
-- `npm run lint` - Run ESLint
-- `npm run type-check` - TypeScript checking
-
-## 🎨 Features in Detail
-
-### Image Upload & Analysis
-- Drag & drop interface
-- Multiple file support
-- AI-powered content extraction
-- Smart title generation
-
-### Slide Generation
-- Professional templates
-- Automatic layout optimization
-- Content suggestions
-- Export capabilities
-
-## 🚀 Deployment
-
-Ready to deploy on Vercel, Netlify, or any Node.js hosting platform.
-
-## 📝 License
-
-MIT License - feel free to use for personal and commercial projects.
+- **pptxgenjs** - PowerPoint file generation
 
 ---
 
-**Built with ❤️ for the future of presentations**
+## Project Structure
+
+```
+snap2slides/
+├── app/
+│   ├── api/          # 8 API routes (analyze, generate, health, etc.)
+│   ├── globals.css   # Global styles
+│   ├── layout.tsx    # Root layout
+│   └── page.tsx      # Homepage
+├── components/       # React components
+├── lib/              # Utilities and API handlers
+├── public/           # Static assets
+├── next.config.js    # Next.js configuration
+└── package.json      # Dependencies
+```
+
+---
+
+## Current Limitations (Honest)
+
+⚠️ **PDF processing is basic** - Works but needs improvement  
+⚠️ **Large files (>10MB) can timeout** - Need better chunking  
+⚠️ **Error messages** - Could be more user-friendly  
+⚠️ **No test suite yet** - Adding tests in next phase  
+⚠️ **Limited document formats** - Focusing on images first  
+
+---
+
+## Roadmap
+
+**Current Focus:** PDF improvements and error handling ([funded by microgrant](./ROADMAP.md))
+
+### Next 6 Weeks
+- Better PDF-to-slide conversion
+- Improved error handling for large files
+- Mobile UI optimization
+- Comprehensive test suite
+
+### Future Possibilities
+- More document formats (Word, Excel)
+- Custom slide templates
+- Batch processing
+- API access for developers
+
+See [ROADMAP.md](./ROADMAP.md) for detailed timeline and budget.
+
+---
+
+## Development
+
+```bash
+# Development server
+npm run dev
+
+# Production build
+npm run build
+npm start
+
+# Type checking and linting
+npm run type-check
+npm run lint
+```
+
+---
+
+## Contributing
+
+This is a learning project, but contributions are welcome! See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
+
+**Areas Where Help Is Needed:**
+- PDF parsing improvements
+- Test coverage
+- Error handling
+- Documentation
+
+---
+
+## Support This Project
+
+⭐ **Star this repo** if you find it useful  
+💰 **Sponsor development** via [GitHub Sponsors](https://github.com/sponsors/SaurabhCodesAI)  
+🐛 **Report bugs** via [Issues](https://github.com/SaurabhCodesAI/snap2slides/issues)  
+🤝 **Contribute** via [Pull Requests](https://github.com/SaurabhCodesAI/snap2slides/pulls)
+
+---
+
+## License
+
+MIT License - See [LICENSE](./LICENSE) for details.
+
+---
+
+**Built by:** Saurabh Pareek ([@SaurabhCodesAI](https://github.com/SaurabhCodesAI))  
+**Contact:** saurabhpareek228@gmail.com  
+**Status:** Active development, seeking $300 microgrant for improvements
