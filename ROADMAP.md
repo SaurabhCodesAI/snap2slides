@@ -1,6 +1,6 @@
 # Snap2Slides Funding Roadmap
 
-> 💰 **Microgrant Request:** $300 for 6 weeks of focused improvements
+> 💰 **Microgrant Request:** $400 for 6 weeks of focused improvements
 
 ---
 
@@ -29,7 +29,7 @@
 
 ---
 
-## Funding Goal: $300
+## Funding Goal: $400
 
 ### Budget Breakdown
 
@@ -38,8 +38,8 @@
 | **PDF Processing** | $50 | Better library for PDF-to-slide conversion |
 | **API Testing Credits** | $100 | Gemini API calls for testing edge cases |
 | **Vercel Pro (2 months)** | $40 | Better performance for large file processing |
-| **Development Time** | $110 | ~15 hours at OSS community rate |
-| **Total** | **$300** | |
+| **Development Time** | $210 | ~25 hours at OSS community rate |
+| **Total** | **$400** | |
 
 **Note:** Development rate is $7-8/hour (standard for open source microgrants, not commercial rates)
 
@@ -168,4 +168,4 @@ The project will continue, but funding accelerates development and ensures thoro
 ---
 
 **Last Updated:** November 17, 2025  
-**Status:** Seeking $300 microgrant for 6-week development sprint
+**Status:** Seeking $400 microgrant for 6-week development sprint

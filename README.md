@@ -2,7 +2,7 @@
 
 **AI-Powered Image-to-PowerPoint Converter**
 
-> 💡 **Seeking Microgrant:** $300 for PDF improvements and better error handling. [See funding details →](./ROADMAP.md)
+> 💡 **Seeking Microgrant:** $400 for PDF improvements and better error handling. [See funding details →](./ROADMAP.md)
 
 A Next.js web app that converts images and documents into PowerPoint presentations using Google Gemini Vision API. Built as a learning project to understand AI integration, file processing, and Next.js deployment.
 
@@ -156,4 +156,4 @@ MIT License - See [LICENSE](./LICENSE) for details.
 
 **Built by:** Saurabh Pareek ([@SaurabhCodesAI](https://github.com/SaurabhCodesAI))  
 **Contact:** saurabhpareek228@gmail.com  
-**Status:** Active development, seeking $300 microgrant for improvements
+**Status:** Active development, seeking $400 microgrant for improvements
